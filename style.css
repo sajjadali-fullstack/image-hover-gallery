@@ -1,0 +1,52 @@
+ /* Universal CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* font-family: 'Sans-serif'; */
+    color: #fff;
+}
+
+/* HTML & Body */
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:'Courier New', Courier, monospace 'Sylfaen';
+    background-color: #000;
+}
+
+/* Main */
+#main{
+    width: 100%;
+    height: 100%;
+    background: #111;
+    position: relative;
+}
+
+
+/* Element */
+#main > .element{
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid #fff;
+}
+
+
+.element > h1{
+    font-size: 5vw;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference ;
+}
+
+.element > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    transition: all linear 0.1s;  
+}
