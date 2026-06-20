@@ -1,32 +1,29 @@
-# Hover Image Gallery
+# 🖼️ Image Hover Gallery
 
-**🎯 Description:**  
-A dynamic hover gallery where images pop up and follow your cursor. Showcases WWE stars and popular movie characters in an interactive way.
+An interactive gallery where images appear and follow your cursor as you hover over character names. Built with pure HTML, CSS, and JavaScript — no libraries needed.
 
----
-
-## 🔗 Live Demo
-Check it out here: [Hover Image Gallery Live](https://sajjadali-fullstack.github.io/image-hover-gallery/)
+🔗 **Live Demo:** [sajjadali-fullstack.github.io/image-hover-gallery](https://sajjadali-fullstack.github.io/image-hover-gallery/)
 
 ---
 
 ## ✨ Features
 
-- 🖼 **Interactive Hover:** Images appear when you hover over a name.  
-- 🖱 **Cursor-Follow Effect:** Images follow your mouse for a dynamic experience.  
-- 🎭 **Multiple Characters:** Includes WWE stars and popular movie heroes.  
-- ⚡ **Smooth Animations:** Subtle opacity and movement effects for a polished look.  
-- 🛠 **Easy to Customize:** Add your own images or names in seconds.  
+- Images appear on hover and follow your mouse cursor in real time
+- Smooth opacity transition for a polished feel
+- `mix-blend-mode: difference` for a stylish text effect
+- WWE stars + Bollywood characters included
+- Easy to extend — just add a name and image
 
 ---
 
 ## 🛠️ Built With
 
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20"/> **HTML**  
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="20"/> **CSS**  
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20"/> **JavaScript**
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 ---
+
 
 ## 🎨 Demo
 
@@ -45,3 +42,43 @@ hover-image-gallery/
 └── index.html # Main HTML file
 
 
+---
+
+## 💡 How It Works
+
+Each `.element` div listens for three mouse events:
+
+| Event | Action |
+|---|---|
+| `mouseenter` | Image fades in (opacity → 1) |
+| `mouseleave` | Image fades out (opacity → 0) |
+| `mousemove` | Image position updates to cursor `x, y` |
+
+```js
+element.addEventListener("mousemove", (event) => {
+    element.childNodes[3].style.left = event.x + "px";
+    element.childNodes[3].style.top  = event.y + "px";
+});
+```
+
+---
+
+## 🎨 Preview
+
+![Demo](images/demo.png)
+
+---
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/sajjadali-fullstack/image-hover-gallery.git
+cd image-hover-gallery
+# Open index.html in your browser
+```
+
+---
+
+## 👤 Author
+
+**Sajjad Ali** — [GitHub](https://github.com/sajjadali-fullstack) · [Portfolio](https://sajjadali-fullstack-portfolio.netlify.app/)
