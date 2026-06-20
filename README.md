@@ -32,17 +32,6 @@ An interactive gallery where images appear and follow your cursor as you hover o
 
 ---
 
-## 📂 Folder Structure
-
-hover-image-gallery/
-│
-├── images/ # All images (WWE stars, movie characters)
-├── style.css # External CSS file
-├── script.js # JavaScript for hover/cursor effect
-└── index.html # Main HTML file
-
-
----
 
 ## 💡 How It Works
 
@@ -68,6 +57,21 @@ element.addEventListener("mousemove", (event) => {
 ![Demo](images/demo.png)
 
 ---
+
+
+---
+
+## 📂 Folder Structure
+
+hover-image-gallery/
+│
+├── images/ # All images (WWE stars, movie characters)
+├── style.css # External CSS file
+├── script.js # JavaScript for hover/cursor effect
+└── index.html # Main HTML file
+
+---
+
 
 ## 🚀 Run Locally
 
